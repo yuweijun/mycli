@@ -1,14 +1,9 @@
-set nocompatible
-
 function Save()
     exec 'wq! ~/.mysql/out/'.localtime().'.log'
 endfunction
 
-let mapleader=","
-let maplocalleader="\\"
-
-nnoremap <silent> <leader>w :call Save()<cr>
-nnoremap <silent> <leader>q :q!<cr>
+nnoremap <silent> <a-s> :call Save()<cr>
+nnoremap <silent> <a-w> :q<cr>
 inoremap jj <esc>
 
 set encoding=utf-8
