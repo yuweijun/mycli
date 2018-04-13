@@ -1,14 +1,12 @@
-# mycli config file
+## mycli config file
 
-    $ mkdir -p ~/.mysql/out
-    $ ln -s myclirc ~/.myclirc
-    $ ln -s my.cnf ~/.my.cnf
-    $ ln -s my.vim ~/.my.vim
+    mkdir -p ~/.mysql/out
+    ln -s myclirc ~/.myclirc
+    ln -s my.cnf ~/.my.cnf
+    ln -s my.vim ~/.my.vim
 
-禁用linux Terminal console的`alt`键功能：
+按`,q`关闭弹出的`vim`窗口，按`,w`保存查询SQL的结果到`~/.mysql/out/[0-9]{10}.log`文件中。
 
-    Terminal - Edit - Preferences - General - Enable mnemonics
+## log query sql and result
 
-不要勾选这个选项。
-
-按`alt + w`关闭弹出的空白`vim`窗口，按`alt + s`保存查询SQL的结果到`~/.mysql/out/timestamp.log`文件中。
+    mycli -u root -p password -D database -l ~/.mysql/query.log
