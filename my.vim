@@ -7,8 +7,8 @@ endfunction
 let mapleader=","
 let maplocalleader="\\"
 
-nnoremap <silent> <leader>w :call Save()<cr>
-nnoremap <silent> <leader>e :q!<cr>
+nnoremap <silent> <leader>w :q!<cr>
+nnoremap <silent> <leader>e :call Save()<cr>
 inoremap jj <esc>
 
 set encoding=utf-8
